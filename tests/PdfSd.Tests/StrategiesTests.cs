@@ -10,10 +10,10 @@ public class StrategiesTests
 {
     private class DummyUppercaseStrategy : IDataTransformationStrategy
     {
-        public bool CanHandle(DataSlot slot) => slot.Tag == "Name";
+        public bool CanHandle(DataSlot slot) => slot.IsTagged;
         public DataSlot Transform(DataSlot slot)
         {
-            slot.OriginalValue = slot.OriginalValue.ToUpper();
+            slot.Content = slot.Content.ToUpper();
             return slot;
         }
     }
@@ -27,8 +27,8 @@ public class StrategiesTests
 
         var slots = new List<DataSlot>
         {
-            new DataSlot { Id = "1", Tag = "Name", OriginalValue = "john doe", Page = 1 },
-            new DataSlot { Id = "2", Tag = "Age", OriginalValue = "30", Page = 1 }
+            new DataSlot { ObjectId = new uint[]{ 1, 0 }, IsTagged = true, Content = "john doe" },
+            new DataSlot { ObjectId = new uint[]{ 2, 0 }, IsTagged = false, Content = "30" }
         };
 
         // Act
@@ -36,7 +36,7 @@ public class StrategiesTests
 
         // Assert
         Assert.Equal(2, result.Count);
-        Assert.Equal("JOHN DOE", result[0].OriginalValue);
-        Assert.Equal("30", result[1].OriginalValue);
+        Assert.Equal("JOHN DOE", result[0].Content);
+        Assert.Equal("30", result[1].Content);
     }
 }
