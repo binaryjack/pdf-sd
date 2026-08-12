@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PdfSd.Cli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d9d6a8e0d4725852b4eecdafbb816ecfd2b4ed0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6621c1d0e8f11157a11458bb70f84f800b8ec97")]
 [assembly: System.Reflection.AssemblyProductAttribute("PdfSd.Cli")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PdfSd.Cli")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
