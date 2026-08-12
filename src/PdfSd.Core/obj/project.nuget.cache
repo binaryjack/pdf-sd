@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EijAi7+Yuw8=",
+  "success": true,
+  "projectFilePath": "/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/PdfSd.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/tadeop/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.10/microsoft.aspnetcore.app.ref.10.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

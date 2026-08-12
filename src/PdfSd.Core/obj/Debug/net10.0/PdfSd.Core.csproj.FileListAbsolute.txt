@@ -1,0 +1,12 @@
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/bin/Debug/net10.0/PdfSd.Core.deps.json
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/bin/Debug/net10.0/PdfSd.Core.dll
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/bin/Debug/net10.0/PdfSd.Core.pdb
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.AssemblyInfoInputs.cache
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.AssemblyInfo.cs
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.csproj.CoreCompileInputs.cache
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.sourcelink.json
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.dll
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/refint/PdfSd.Core.dll
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/PdfSd.Core.pdb
+/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Core/obj/Debug/net10.0/ref/PdfSd.Core.dll

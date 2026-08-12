@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PdfSd.Cli/PdfSd.Cli.csproj" />
+    <Project Path="src/PdfSd.Core/PdfSd.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PdfSd.Tests/PdfSd.Tests.csproj" />
+  </Folder>
+</Solution>

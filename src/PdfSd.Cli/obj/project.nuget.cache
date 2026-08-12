@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "06Q0PIW5RlU=",
+  "success": true,
+  "projectFilePath": "/home/tadeop/dev/Codernic-Workspace/pdf-sd/src/PdfSd.Cli/PdfSd.Cli.csproj",
+  "expectedPackageFiles": [
+    "/home/tadeop/.nuget/packages/system.commandline/3.0.0-preview.7.26381.103/system.commandline.3.0.0-preview.7.26381.103.nupkg.sha512",
+    "/home/tadeop/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.10/microsoft.aspnetcore.app.ref.10.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
