@@ -1,0 +1,29 @@
+# Copyright (c) 2026 Tadeop / Codernic AI Engineering. All rights reserved.
+# Proprietary and Confidential Source Code.
+# SPDX-License-Identifier: LicenseRef-Codernic-Proprietary
+
+# Build & Dependency Artifacts
+target/
+node_modules/
+dist/
+build/
+*.tgz
+*.cpk
+
+# Codernic Runtime
+.codernic/
+scratch/
+*.redb
+*.lock
+*.log
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
