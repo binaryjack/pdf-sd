@@ -2,21 +2,33 @@
 name: pirsig-audit
 description: Audit source files against Pirsig AST invariants (max 200 lines per file, max 40 lines per function, zero any types, zero placeholders).
 ---
+<?xml version="1.0" encoding="UTF-8"?>
+<codernic_skill id="pirsig-audit" kind="workflow" version="1.0.0">
+  <mental_model>
+    Audit source files against Codernic Pirsig sovereign AST quality invariants.
+    Enforces structural bounds, complete typing, anti-vaporware, and zero-warning compilation.
+  </mental_model>
 
-# Pirsig AST Audit Skill
+  <workflow>
+    <step order="1" name="Structural Bounds Audit">
+      <action>Verify line count limits: max 200 lines per file and max 40 lines per function.</action>
+    </step>
+    <step order="2" name="Anti-Vaporware and De-stubbing Scan">
+      <action>Verify zero todo!(), unimplemented!(), any, or mock responses.</action>
+    </step>
+    <step order="3" name="Zero-Warning Compilation Gate">
+      <action>Execute clippy pass with zero warning tolerance under -D warnings.</action>
+    </step>
+  </workflow>
 
-Audit source files against Codernic Pirsig sovereign AST quality invariants.
+  <invariants>
+    <invariant id="INV-PIRSIG-BOUNDS">Max 200 lines per file, max 40 lines per function.</invariant>
+    <invariant id="INV-ZERO-STUB">Absolute ban on todo!(), unimplemented!(), any, or mock responses.</invariant>
+    <invariant id="INV-ZERO-WARNINGS">Zero compiler and clippy warnings (-D warnings).</invariant>
+  </invariants>
 
-## Invariant Checks
-1. File size limit: maximum 200 lines per file.
-2. Function size limit: maximum 40 lines per function or method.
-3. Strict typing: zero any types; all types must be explicitly declared.
-4. Complete implementation: zero placeholder comments, dummy values, or unfinished logic.
-5. Zero warnings: compiler and linter passes must be clean.
-
-## Verification Workflow
-When reviewing changes across the project:
-1. Verify line counts for every touched file (<= 200 lines).
-2. Inspect function definitions to ensure bounded scope (<= 40 lines).
-3. Confirm zero occurrences of disallowed type escapes (no any, no stubs).
-4. Run compiler and linter checks to ensure zero warnings.
+  <verification>
+    <step name="clippy">cargo clippy -- -D warnings</step>
+    <step name="test">cargo test</step>
+  </verification>
+</codernic_skill>
